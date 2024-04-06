@@ -5,11 +5,11 @@ const exchangeRate = {
 
 
 function cadToUsd(amount) {
-    return amount * exchangeRate['USD'];
+    return amount / exchangeRate['USD'];
 }
 
 function usdToCad(amount) {
-    return amount * exchangeRate['CAD'];
+    return amount * exchangeRate['USD'];
 }
 
 function updateConvertedAmount() {
